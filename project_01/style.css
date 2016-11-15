@@ -1,0 +1,69 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	max-width: 1400px;
+	min-width: 890px;
+	max-height: 1715px;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	margin: auto;
+}
+header {
+	height: 310px;
+	background-color: #dcdcdc;
+}
+.logo {
+	float: left;
+	margin-top: 65px;
+	margin-left: 210px;
+	margin-bottom: 65px;
+	background-image: url(img/logo.png);
+	width: 273px;
+	height: 100px;
+}
+.phone-number {
+	float: right;
+	margin-top: 77px;
+	margin-right: 211px;
+}
+.phone-number a {
+	color: #767676;
+	font-family: PTSans;
+	font-size: 40px;
+	font-weight: 300;
+	line-height: 46px;
+	text-align: right;
+	text-decoration: none;
+}
+.phone-number a:hover {
+	color: darkgray;
+}
+nav {
+	display: inline-block;
+	width: 1400px;
+	height: 80px;
+	background-color: #767676;
+	text-align: center;
+}
+header nav ul li {
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	font-weight: 300;
+	margin: 29px 10px;
+	padding-right: 24px;
+}
+header nav ul li:not(:last-child) {
+	border-right: 2.5px solid white;
+}
+header nav ul li a {
+	text-decoration: none;
+	color:  #ffffff;
+	text-align: center;
+}
+header nav ul li a:hover {
+	text-decoration: underline;
+}
