@@ -1,15 +1,22 @@
-* {
+html, body {
+	height: 100%;
 	margin: 0;
-	padding: 0;
+	padding: 0;	
 }
 body {
 	max-width: 1400px;
 	min-width: 890px;
-	max-height: 1715px;
 	font-family: 'PT Sans', sans-serif;
 	font-size: 14px;
 	line-height: 22px;
 	margin: auto;
+}
+.page-wrapper {
+    min-height: 100%;
+    margin-bottom: -230px;
+}
+* html .page-wrapper {
+    height: 100%;
 }
 header {
 	height: 310px;
@@ -66,4 +73,79 @@ header nav ul li a {
 }
 header nav ul li a:hover {
 	text-decoration: underline;
+}
+.slider {
+	height: 400px;
+	background-color: #f8f8f8; 
+	overflow: hidden;
+}
+.slider img {
+	bottom: 30;
+	display: block;
+	margin: 0 auto;
+}
+aside {
+	width: 350px;
+	margin-left: 210px;
+	margin-top: 30px;
+	background-color: #767676;
+	float: left;
+	font-family: 'PT Sans', sans-serif;
+	color:  #e4e4e4;
+	font-size: 14px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 22px;/* Приближение из-за подстановки шрифтов */
+	text-align: left;
+}
+aside ul {
+	margin: 30px 34px;
+}
+aside li {
+	list-style-type: none;
+	margin: 30px 0;
+}
+aside li time {
+	font-style: italic;
+}
+aside a {
+	text-decoration: none;
+	color:  #e4e4e4;
+}
+aside a:hover {
+	color: white;
+}
+.archive {
+	float: right;
+	margin-bottom: 30px;
+}
+aside h2 {
+	margin: 30px 34px 34px 0;
+	font-family: 'PT Sans', sans-serif;
+	color:  #ffffff;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 46px;
+	text-align: left;
+}
+.content {
+	display: inline-block;
+	float: left;
+	width: 569px;
+	margin: 50px 59px;
+	font-family: 'PT Sans', sans-serif;
+	color: #767676;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	text-align: left;
+}
+p {
+	margin: 15px 0;
+}
+.page-buffer {
+	height: 230px;
+}
+footer {
+	position: absolute;
+	background-color: #767676;
 }
