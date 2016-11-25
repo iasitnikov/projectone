@@ -1,7 +1,9 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 html, body {
 	height: 100%;
-	margin: 0;
-	padding: 0;	
 }
 body {
 	max-width: 1400px;
@@ -11,85 +13,91 @@ body {
 	line-height: 22px;
 	margin: auto;
 }
-.page-wrapper {
-    min-height: 100%;
-    margin-bottom: -230px;
-}
-* html .page-wrapper {
-    height: 100%;
+.content {
+	min-height: calc(100vh - 250px);
 }
 header {
-	height: 310px;
+	display: flex;
+	justify-content: space-around;
+	height: 230px;	
 	background-color: #dcdcdc;
 }
 .logo {
-	float: left;
-	margin-top: 65px;
-	margin-left: 210px;
-	margin-bottom: 65px;
 	background-image: url(img/logo.png);
+	margin: 64px 0 0 30px;
 	width: 273px;
 	height: 100px;
 }
 .phone-number {
-	float: right;
-	margin-top: 77px;
-	margin-right: 211px;
+	margin: 65px 0 0 65px;
 }
 .phone-number a {
 	color: #767676;
-	font-family: PTSans;
-	font-size: 40px;
-	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 35px;
+	font-stretch: condensed;
 	line-height: 46px;
-	text-align: right;
 	text-decoration: none;
 }
 .phone-number a:hover {
 	color: darkgray;
 }
 nav {
-	display: inline-block;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: nowrap;
 	width: 1400px;
 	height: 80px;
 	background-color: #767676;
-	text-align: center;
 }
-header nav ul li {
-	display: inline-block;
+nav ul {
+	display: flex;
+	align-items: center;
+}
+nav ul li {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 25px;
 	font-weight: 300;
-	margin: 29px 10px;
+	margin: 0 10px;
 	padding-right: 24px;
+	list-style-type: none;
 }
-header nav ul li:not(:last-child) {
+nav ul li:not(:last-child) {
 	border-right: 2.5px solid white;
 }
-header nav ul li a {
+nav ul li a {
 	text-decoration: none;
 	color:  #ffffff;
 	text-align: center;
 }
-header nav ul li a:hover {
+nav ul li a:hover {
 	text-decoration: underline;
 }
 .slider {
 	height: 400px;
-	background-color: #f8f8f8; 
+	background-color: #f8f8f8;
+	position: relative; 
 	overflow: hidden;
 }
 .slider img {
-	bottom: 30;
 	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 70px;
 	margin: 0 auto;
+}
+.main {
+	display: flex;
+	justify-content: center;
+	height: auto;
 }
 aside {
 	width: 350px;
-	margin-left: 210px;
+	height: 550px;
 	margin-top: 30px;
+	margin-right: 40px;
 	background-color: #767676;
-	float: left;
 	font-family: 'PT Sans', sans-serif;
 	color:  #e4e4e4;
 	font-size: 14px;/* Приближение из-за подстановки шрифтов */
@@ -98,7 +106,7 @@ aside {
 	text-align: left;
 }
 aside ul {
-	margin: 30px 34px;
+	margin: 20px 34px;
 }
 aside li {
 	list-style-type: none;
@@ -119,7 +127,7 @@ aside a:hover {
 	margin-bottom: 30px;
 }
 aside h2 {
-	margin: 30px 34px 34px 0;
+	margin: 15px 34px 34px 0;
 	font-family: 'PT Sans', sans-serif;
 	color:  #ffffff;
 	font-size: 40px;
@@ -127,25 +135,53 @@ aside h2 {
 	line-height: 46px;
 	text-align: left;
 }
-.content {
-	display: inline-block;
-	float: left;
+article {
 	width: 569px;
-	margin: 50px 59px;
+	margin-top: 60px;
 	font-family: 'PT Sans', sans-serif;
 	color: #767676;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 22px;
-	text-align: left;
+	text-align: justify;
+}
+article h2 {
+	font-size: 40px;
+	font-weight: normal;
 }
 p {
 	margin: 15px 0;
 }
-.page-buffer {
-	height: 230px;
+.bufer {
+	height: 200px;
 }
 footer {
-	position: absolute;
+	height: 220px;
+	padding-top: 40px;
+	display: flex;
+	align-content: center;
+	align-items: stretch;
+	justify-content: center;
 	background-color: #767676;
+	font-family: 'PT Sans', sans-serif;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 26px;
+}
+footer ul li {
+	list-style-type: none;
+}
+footer a {
+	text-decoration: underline;
+	color:  #ffffff;
+}
+footer address {
+	font-style: normal;
+}
+.footer-menu {
+	margin-left: 200px;
+}
+.footer-logo {
+	margin: 10px 5px 0 240px;
 }
